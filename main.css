@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue';
+}
+
+button {
+    cursor: pointer;
+}
+
+.header__preview {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header__logo {
+    font-family: 'Lobster', cursive;
+    color: #3cc3b5;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.header__search {
+    width: 430px;
+    height: 31px;
+    box-sizing: border-box;
+    padding: 25px;
+    border: 2px solid #e1e1e1;
+    margin: 10px 0;
+    outline: 0;
+    letter-spacing: 1px;
+    background: url('../img/search-icon.png') no-repeat 98% 50%;
+}
+
+.fa-search {
+    display: flex;
+    position: absolute;
+    right: 740px;
+    color: #b6afaf;
+
+
+
+}
+
+.header__basket {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.header__basket-img {
+    background: url('.//img/basket.png') no-repeat center;
+    height: 40px;
+    width: 40px;
+}
+
+.header__basket-price {
+    color: #a1a1a1;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: none;
+}
+
+.menu__line {
+    background-color: #4ccfc1;
+    height: 3px;
+    width: 40px;
+    margin-bottom: 6px;
+}
+
+.header__slider {
+    background-color: #4ccfc1;
+
+}
+
+.header__menu {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
+}
+
+.header__nav {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 7px 0;
+}
+
+.header_bottom_shop {
+    text-transform: uppercase;
+    width: 140px;
+    font-size: 30px;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 4px;
+    border: 4px solid white;
+    color: white;
+}
+
+.header_bottom_shop:hover {
+    background-color: teal;
+}
+
+.dots {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: teal;
+}
+
+.nav__link {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav__link:hover {
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+}
+
+.nav__link:not(:last-child) {
+    margin-right: 40px;
+
+}
+
+.nav__link:not(:last-child):after {
+    content: '|';
+    position: absolute;
+    right: -30px;
+    text-shadow: none;
+}
+
+.popular-goods {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+}
+
+.popular-goods__img {
+    background: url('./img/main-t-shirt.png') no-repeat center;
+    height: 330px;
+    width: 280px;
+    margin-right: 100px;
+}
+
+.popular-goods__description {
+    width: 400px;
+}
+
+.popular-goods__title {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 55px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.popular-goods__paragraph {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.slider-wrap {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    /* overflow: hidden; */
+    padding: 20px 0;
+}
+
+.slider {
+    height: 150px;
+}
+
+.slider__item {
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
+}
+
+.slider__item:last-child {
+    margin-right: 0;
+}
+
+.slider__container {
+    display: flex;
+    height: 100%;
+    position: absolute;
+
+    margin: 0 60px;
+    left: 0;
+}
+
+.slider__slide {
+    display: flex;
+    margin-right: 90px;
+}
+
+.fas {
+    border-top: none;
+    border-right: none;
+    position: absolute;
+}
+
+.fa-chevron-left {
+    color: #b6afaf;
+    left: -27px;
+    top: 55px;
+
+
+}
+
+.fa-chevron-right {
+    color: #b6afaf;
+    right: -27px;
+    top: 55px;
+
+}
+
+.fa-search {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+.slider__img {
+    margin-right: 20px;
+    width: 130px;
+}
+
+.slider__img_number_1 {
+    background: url('.//img/shoes.png') no-repeat center;
+}
+
+.slider__img_number_2 {
+    background: url('.//img/T-shirt.png') no-repeat center;
+}
+
+.slider__img_number_3 {
+    background: url('.//img/trousers.png') no-repeat center;
+}
+
+.product-title {
+    color: #afafaf;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.slider__title {
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.searchbar {
+    position: relative;
+}
+
+.title {
+    background-color: #3cc395;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 24px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.feature-products {
+    display: flex;
+    max-width: 875px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+.feature-products__item {
+    width: 253px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    border-bottom: 5px solid #3cc395;
+    margin-bottom: 50px;
+}
+
+.feature-products__item:not(:nth-child(3n+3)) {
+    margin-right: 5px;
+}
+
+.product-title_justify_center {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.feature-products__img {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #afafaf;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.feature-products__img_number_1 {
+    background: url('.//img/featured-shoe.png') no-repeat center;
+    height: 130px;
+    width: 189px;
+}
+
+.feature-products__img_number_2 {
+    background: url('.//img/T-shirt-dark-blue.png') no-repeat center;
+    height: 120px;
+    width: 120px;
+}
+
+.feature-products__img_number_3 {
+    background: url('.//img/featured-products-grey-t-shirt.png') no-repeat center;
+    height: 120px;
+    width: 100px;
+}
+
+.feature-products__img_number_4 {
+    background: url('.//img/featured-wallet.png') no-repeat center;
+    height: 130px;
+    width: 180px;
+}
+
+.feature-products__img_number_5 {
+    background: url('.//img/featured-handbag.png') no-repeat center;
+    height: 130px;
+    width: 140px;
+}
+
+.feature-products__img_number_6 {
+    background: url('.//img/featured-trousers.png') no-repeat center;
+    height: 120px;
+    width: 70px;
+}
+
+
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    margin: auto;
+}
+
+.price button,
+.slider__description button {
+
+    text-transform: uppercase;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: teal;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 4px 10px;
+    border: none;
+    color: white;
+}
+
+.slider__description button {
+    margin-top: 10px;
+}
+
+.price button:hover,
+.slider__description button:hover {
+    background-color: rgb(0, 77, 77);
+}
+
+.footer {
+    background-color: #3cc3b5;
+    padding-top: 40px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.links__item:not(:last-child) {
+    margin-right: 110px;
+}
+
+.links__title {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.links__link {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.links__link:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    display: inline-block;
+    margin: auto;
+    background-color: #2da89b;
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.burger {
+    display: none;
+}
+
+.fa-bars {
+    color: #2da89b;
+    font-size: 32px;
+    top: 40px;
+    right: 40px;
+}
+
+@media screen and (max-width: 1140px) {
+    .slider-wrap {
+        display: none;
+    }
+
+    .header__preview {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        background-color: white;
+        height: 120px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header__basket {
+        display: none;
+    }
+
+    .header__slider {
+        margin-top: 120px;
+    }
+}
